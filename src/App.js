@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from "./pages/Home"
-import SingleDog from "./pages/SingleDog"
+// import SingleDog from "./pages/SingleDog"
 
 function App() {
   const [dogs, setDogs] = useState([]);
@@ -42,7 +42,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/:name" element={<SingleDog />}></Route>
+          {/* <Route path="/:name" element={<SingleDog />}></Route> */}
         </Routes>
       </BrowserRouter>
     </>
